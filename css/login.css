@@ -1,0 +1,171 @@
+body {
+    background-color: #F3F5F7;
+}
+
+.w {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    position: absolute;
+    top: -59px;
+    left: -360px;
+    margin-left: 30px;
+    color: #999;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo a {
+    display: block;
+    width: 195px;
+    height: 42px;
+    background: url(../images/logo@2x.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.logo {
+    margin-top: 64px;
+    width: 195px;
+    height: 42px;
+}
+
+.login {
+    width: 400px;
+    margin: 38px auto;
+}
+
+.login ul {
+    float: left;
+}
+
+.login ul li {
+    float: left;
+    margin: 0 60px;
+}
+
+.login ul li a {
+    display: block;
+    font-size: 20px;
+    color: #999;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.current {
+    color: #00a4ff;
+    border-bottom: 3px solid #00a4ff;
+}
+
+.reg_form ul {
+    margin-left: 400px;
+    width: 400px;
+}
+
+.reg_form ul li {
+    position: relative;
+    color: #999;
+    margin-bottom: 22px;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.reg_form ul li .inp {
+    width: 400px;
+    height: 37px;
+    margin-bottom: 5px;
+    border: 1px solid #CACACA;
+}
+
+.reg_form ul li span {
+    position: absolute;
+    left: 0;
+    top: 71px;
+    display: none;
+}
+
+.error {
+    color: #FF5A2C;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    margin-top: -2px;
+}
+
+.success {
+    color: green;
+}
+
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+
+.memory {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.reg_form ul li em {
+    float: right;
+    margin-right: 0;
+}
+
+.reg_form ul li em a {
+    color: #999;
+}
+
+.reg_form ul li:nth-child(3) {
+    font-size: 15px;
+}
+
+.reg_form ul li button {
+    width: 400px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    background-color: #00a4ff;
+}
+
+.reg_form ul li button a {
+    font-size: 20px;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin-top: 293px;
+}
+
+footer p a {
+    font-size: 16px;
+    padding: 0 30px;
+    border-right: 1px solid #ccc;
+}
+
+footer p a:last-child {
+    border: none;
+}
+
+footer p:nth-child(2) {
+    margin-top: 36px;
+    color: #999;
+}

@@ -1,0 +1,190 @@
+body {
+    background-color: #F3F5F7;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo a {
+    display: block;
+    width: 199px;
+    height: 59px;
+    background: url(../images/logo@2x.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    left: -199px;
+    width: 199px;
+    height: 59px;
+}
+
+.nav {
+    float: left;
+    margin-left: 74px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+
+/* search搜索模块 */
+
+.search {
+    position: relative;
+    float: left;
+    width: 411px;
+    height: 40px;
+    margin-left: 315px;
+}
+
+.search input {
+    float: left;
+    width: 361px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-color: #00a4ff;
+}
+
+.search span {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    font-size: 22px;
+}
+
+
+/* user模块 */
+
+.personal {
+    float: left;
+    margin-left: 31px;
+    font-size: 14px;
+    line-height: 42px;
+    color: #666;
+}
+
+.remind {
+    position: absolute;
+    right: -27px;
+    cursor: pointer;
+    top: 14px;
+    width: 16px;
+    height: 14px;
+    background: url(..//images/提醒@2x.png) no-repeat;
+}
+
+.user a {
+    color: #666;
+}
+
+.personal a {
+    color: #666;
+}
+
+.user {
+    position: absolute;
+    right: -137px;
+    top: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* header区域end */
+
+
+/* footer 模块 */
+
+footer {
+    height: 273px;
+    background-color: #fff;
+}
+
+.footer .w {
+    padding-top: 35px;
+}
+
+.copyright {
+    float: left;
+    margin-top: 33px;
+    margin-left: 21px;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+
+.copyright .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 33px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+.links {
+    float: right;
+    margin-top: 33px;
+    margin-right: 31px;
+}
+
+.links dl {
+    float: left;
+    margin-left: 100px;
+}
+
+.links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.links dl dd a {
+    color: #333;
+    font-size: 12px;
+}

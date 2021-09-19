@@ -1,0 +1,353 @@
+/* .w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F3F5F7;
+} */
+
+.banner {
+    height: 370px;
+    background: transparent url(../images/banner@2x.png) no-repeat center;
+}
+
+.plan_tabList {
+    width: 1200px;
+    height: 60px;
+    /* background-color: pink; */
+    margin-top: 8px;
+    padding: 18px 30px 0 30px;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+    background-color: #fff;
+}
+
+.plan_tabList ul {
+    height: 24px;
+}
+
+.plan_tabList ul li {
+    float: left;
+    border-right: #ccc solid 2px;
+    padding: 0 18px;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #050505;
+    cursor: pointer;
+}
+
+.plan_tabList ul li:hover {
+    color: #00A4FF;
+}
+
+.plan_tabList ul .current {
+    color: #00A4FF;
+}
+
+.plan_tabList ul li:last-child {
+    border-right: 0;
+}
+
+.plan_tabCon {
+    width: 1200px;
+    margin-top: 10px;
+}
+
+.tabItem {
+    display: none;
+}
+
+.primary {
+    width: 1200px;
+    height: 380px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.middle,
+.senior {
+    width: 1200px;
+    height: 380px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.primaryAvatar {
+    float: left;
+    width: 138px;
+    height: 138px;
+    border: #050505 dashed 1px;
+    margin-top: 115px;
+    margin-left: 23px;
+}
+
+.primary,
+.middle,
+.senior {
+    position: relative;
+}
+
+.tabItem h4 {
+    position: absolute;
+    top: 77px;
+    left: 44px;
+    font-size: 20px;
+}
+
+.primary h4 {
+    color: #BA7CE1;
+}
+
+.middle h4 {
+    color: #B249A5;
+}
+
+.senior h4 {
+    color: #8F4BB8;
+}
+
+.dot1 {
+    position: absolute;
+    top: 47px;
+    left: 182px;
+    width: 10px;
+    height: 10px;
+}
+
+.primary .dot1,
+.primary .dot2 {
+    background: transparent url(../images/椭圆\ 10\ 拷贝@2x.png) no-repeat;
+}
+
+.middle .dot1,
+.middle .dot2 {
+    background: transparent url(../images/椭圆\ 10\ 拷贝\ 6@2x.png) no-repeat;
+}
+
+.senior .dot1,
+.senior .dot2 {
+    width: 10px;
+    height: 10px;
+    background: #8F4BB8;
+    border-radius: 50%;
+}
+
+.circle {
+    position: absolute;
+    top: 77px;
+    left: 177px;
+    width: 20px;
+    height: 20px;
+}
+
+.primary .circle {
+    background: transparent url(../images/椭圆\ 10@2x.png) no-repeat;
+}
+
+.middle .circle {
+    background: transparent url(../images/椭圆\ 10\ 拷贝\ 3@2x.png) no-repeat;
+}
+
+.senior .circle {
+    background: transparent url(../images/椭圆\ 10\ 拷贝\ 7@2x.png) no-repeat;
+}
+
+.strip {
+    position: absolute;
+    top: 97px;
+    left: 185px;
+    width: 4px;
+    height: 241px;
+}
+
+.primary .strip {
+    background: transparent url(../images/矩形\ 57@2x.png) no-repeat;
+}
+
+.middle .strip {
+    background: transparent url(../images/矩形\ 57\ 拷贝@2x.png) no-repeat;
+}
+
+.senior .strip {
+    background: transparent url(../images/矩形\ 57\ 拷贝\ 2@2x.png) no-repeat;
+}
+
+.dot2 {
+    position: absolute;
+    top: 361px;
+    left: 182px;
+    width: 10px;
+    height: 10px;
+}
+
+.desc {
+    float: left;
+    /* overflow: hidden; */
+    width: 340px;
+    height: 287px;
+    margin-left: 76px;
+    margin-top: 43px;
+}
+
+.desc h5 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+.desc p {
+    font-size: 14px;
+    color: #666666;
+    margin: 15px 0 23px 0;
+}
+
+.desc span:nth-of-type(1) {
+    color: #000;
+    font-size: 16px;
+}
+
+.desc span:nth-of-type(2) {
+    font-size: 20px;
+    color: #FF2D2D;
+}
+
+.desc span:nth-of-type(2) em {
+    font-size: 14px;
+}
+
+.desc span:nth-of-type(3) {
+    font-size: 14px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.desc span:nth-of-type(3) em {
+    color: #FF7C2D;
+}
+
+.scrollCon {
+    position: relative;
+    float: left;
+    height: 284px;
+    width: 593px;
+    margin-left: 30px;
+    margin-top: 45px;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.scrollCon ul {
+    position: absolute;
+    left: 0;
+    width: 1200px;
+    margin-left: 10px;
+}
+
+.scrollCon ul img,
+.plan_course img {
+    width: 228px;
+    height: 155px;
+}
+
+.scrollCon p,
+.plan_course p {
+    font-size: 14px;
+    color: #050505;
+    margin: 20px;
+}
+
+.scrollCon span,
+.plan_course span {
+    margin: 0 20px;
+    font-size: 12px;
+    color: #767676;
+}
+
+.scrollCon span em,
+.plan_course span em {
+    color: #FF7C2D;
+}
+
+.scrollbar {
+    float: left;
+    position: relative;
+    width: 494px;
+    height: 12px;
+    background-color: #EEEEEE;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 6px;
+}
+
+.scrollleft {
+    width: 0;
+    height: 12px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #EBD0FC;
+    max-width: 494px;
+}
+
+.scrolldot {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #BA7CE1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.plan_course {
+    float: left;
+    height: 270px;
+    margin-left: 40px;
+    margin-top: 45px;
+}
+
+.firstCour {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.triangle {
+    float: left;
+    border-left: #8F4BB8 solid 18px;
+    border-top: transparent solid 9px;
+    border-right: 0;
+    border-bottom: transparent solid 9px;
+    margin: 73px 10px 0 10px;
+}
+
+.plan_hot {
+    position: absolute;
+    top: 10px;
+    right: -3px;
+    width: 40px;
+    height: 24px;
+    background: transparent url(../images/hot.png) no-repeat;
+}
+
+.firstCour:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.firstCour:hover p {
+    color: #00A4FF;
+}
+
+.firstCour:hover .plan_hot {
+    transform: scale(1.03);
+}
+
+footer {
+    margin-top: 60px;
+}

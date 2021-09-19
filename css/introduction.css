@@ -1,0 +1,494 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?lewah4');
+    src: url('../fonts/icomoon.eot?lewah4#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?lewah4') format('truetype'), url('../fonts/icomoon.woff?lewah4') format('woff'), url('../fonts/icomoon.svg?lewah4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* body {
+    background-color: #F3F5F7;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+
+/* banner模块开始 */
+
+.banner {
+    height: 240px;
+    background: transparent url(../images/b.png) no-repeat center;
+    /* background-color: #fff; */
+}
+
+.bannerCon {
+    height: 240px;
+}
+
+
+/* banner左边部分开始 */
+
+.bannerCon_left {
+    float: left;
+    width: 800px;
+    height: 240px;
+    /* background-color: pink; */
+    padding: 22px 0 0 10px;
+}
+
+.bannerCon_left p:nth-of-type(1) {
+    font-size: 14px;
+    color: #999999;
+}
+
+.bannerCon_left p:nth-of-type(1) i {
+    color: #fff;
+}
+
+.bannerCon_left h3 {
+    font-size: 32px;
+    color: #F3F5F7;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.bannerCon_left p:nth-of-type(2) {
+    font-size: 16px;
+    color: #CA50F8;
+}
+
+.bannerCon_left p:nth-of-type(2) em:nth-of-type(1) {
+    font-size: 14px;
+}
+
+.bannerCon_left p:nth-of-type(2) em:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bannerCon_left p:nth-of-type(2) span {
+    text-decoration: line-through;
+    color: #999999;
+    font-size: 16px;
+}
+
+.studynow {
+    height: 40px;
+    width: 800px;
+    /* background-color: #fff; */
+    margin-top: 40px;
+}
+
+.studynow ul li {
+    float: left;
+    height: 40px;
+    border-right: #999999 solid 1px;
+    padding: 0 35px;
+}
+
+.studynow ul li:last-child {
+    border: 0;
+}
+
+.studynow ul li:first-child {
+    width: 140px;
+    height: 40px;
+    background-color: #00A4FF;
+    padding: 0;
+    margin-right: 25px;
+    border: 0;
+}
+
+.studynow ul li:first-child a {
+    display: block;
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.bannerCon_left .studynow ul h6 {
+    font-size: 12px;
+    color: #DADADA;
+    font-weight: 400;
+}
+
+.bannerCon_left .studynow ul p {
+    font-size: 18px;
+    color: #DADADA;
+}
+
+.studynow ul li:hover {
+    cursor: pointer;
+}
+
+
+/* banner左边部分结束 */
+
+
+/* banner右边部分开始 */
+
+video {
+    width: 270px;
+    height: 156px;
+}
+
+.bannerCon_right {
+    float: left;
+    width: 400px;
+    height: 240px;
+}
+
+.bannerCon_right video {
+    margin: 21px 0 0 21px;
+}
+
+.bannerCon_right video:hover {
+    cursor: pointer;
+}
+
+.bannerCon_right p {
+    margin-left: 41px;
+    margin-top: 10px;
+    font: 14px;
+    color: #DADADA;
+}
+
+.bannerCon_right p span {
+    font-family: 'icomoon';
+    /* margin: 0 15px; */
+    margin-right: 12px;
+}
+
+.bannerCon_right p span:nth-of-type(2) {
+    margin-left: 15px;
+}
+
+.bannerCon_right p em {
+    margin: 0 40px;
+}
+
+
+/* banner右边部分结束 */
+
+
+/* banner模块结束 */
+
+
+/* 课程内容模块开始 */
+
+
+/* 课程内容 头部 导航开始 */
+
+.courseCon_head {
+    width: 906px;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.courseCon_head .current {
+    color: #00A4FF;
+}
+
+.courseCon_head ul {
+    width: 906px;
+}
+
+.courseCon_head ul li {
+    float: left;
+}
+
+.courseCon_head ul li a {
+    font-size: 16px;
+    color: #666666;
+    margin-right: 30px;
+}
+
+.courseCon_head .current {
+    color: #00A4FF;
+}
+
+.courseCon_head ul li a:hover {
+    color: #00A4FF;
+}
+
+
+/* 课程内容 头部 导航结束 */
+
+
+/* 课程内容 主体 部分开始 */
+
+
+/* 课程内容主体的左边部分内容开始 */
+
+.courseCon_body main {
+    float: left;
+    width: 906px;
+    /* height: 800px; */
+}
+
+.courseCon_body main em {
+    position: absolute;
+    top: 31px;
+    left: 45px;
+    font-family: 'icomoon';
+    font-size: 16px;
+    color: #00A4FF;
+}
+
+.emrotate {
+    transform: rotate(180deg);
+}
+
+.courseCon_body main>ul>li:nth-child(odd) {
+    position: relative;
+    width: 906px;
+    height: 128px;
+    background-color: #fff;
+    padding: 30px 46px 0 64px;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+}
+
+.courseCon_body main>ul>li:first-child {
+    margin: 0;
+}
+
+.courseCon_body main>ul>li:nth-child(even) {
+    display: none;
+    width: 906px;
+    height: 254px;
+    /* background-color: #999; */
+    background-color: #fff;
+    padding: 20px 46px 0 64px;
+    margin-top: 2px;
+}
+
+.courseCon_body main>ul>li:last-child {
+    height: 81px;
+}
+
+.courseCon_body main>ul>li h4 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.courseCon_body main>ul>li h4 span {
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.courseCon_body main>ul>li p {
+    font-size: 14px;
+    color: #999999;
+}
+
+.courseCon_body main i {
+    float: right;
+    font-size: 14px;
+    /* color: #999; */
+}
+
+.courseCon_body main a {
+    font-size: 16px;
+    color: #666;
+}
+
+.courseCon_body main a:hover {
+    color: #00A4FF;
+}
+
+.courseCon_body main>ul>li:nth-child(even) ol li {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.courseCon_body main img {
+    vertical-align: text-bottom;
+    margin-left: 5px;
+}
+
+
+/* 课程内容主体的左边部分内容结束 */
+
+
+/* 课程内容主体的右边部分内容开始 */
+
+.courseCon_body aside {
+    float: right;
+    width: 270px;
+    /* height: 800px; */
+}
+
+
+/* 老师模块 */
+
+.courseCon_body .teacher {
+    width: 270px;
+    height: 320px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 30px 30px 0 30px;
+}
+
+.teacher_avatar {
+    float: left;
+    width: 81px;
+    height: 84px;
+    border: #050505 dashed 1px;
+    margin-right: 15px;
+}
+
+.teacher_avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.teacher h5 {
+    float: left;
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.teacher h5 em {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.teacher h6 {
+    float: left;
+    font-size: 12px;
+    color: #5F1898;
+    line-height: 24px;
+}
+
+
+/* 其他课程模块 */
+
+.TA {
+    width: 210px;
+    height: 30px;
+}
+
+.TA a {
+    display: block;
+    width: 210px;
+    height: 30px;
+    background-color: #00A4FF;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 110px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.teacher p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+article h4 {
+    font-size: 16px;
+    color: #00A4FF;
+    font-weight: 400;
+    margin: 38px 0 23px 18px;
+}
+
+.others {
+    width: 270px;
+    height: 636px;
+    background-color: #fff;
+}
+
+.others_hd {
+    width: 271px;
+    height: 141px;
+    background: transparent url(../images/图层\ 164@2x.png) no-repeat;
+    overflow: hidden;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.others_hd h3 {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.others_hd p {
+    font-size: 14px;
+    color: #E9E9E9;
+    text-align: center;
+}
+
+.others_hd span {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.others_hd span:nth-of-type(1) {
+    float: left;
+}
+
+.others_hd span:nth-of-type(2) {
+    float: right;
+}
+
+.others ul {
+    width: 271px;
+    height: 495px;
+    padding-left: 28px;
+}
+
+.others ul li {
+    width: 214px;
+    height: 55px;
+    border-bottom: #D7D7D7 solid 1px;
+    line-height: 55px;
+    font-size: 14px;
+    color: #000;
+}
+
+.others ul li a {
+    color: #000;
+}
+
+.others ul li a:hover {
+    color: #00A4FF;
+}
+
+.others ul li:last-child {
+    border-bottom: 0;
+}
+
+
+/* 课程内容主体的右边部分内容结束 */
+
+
+/* 课程内容 主体 部分结束 */
+
+
+/* 课程内容模块结束 */
+
+footer {
+    margin-top: 60px;
+}
