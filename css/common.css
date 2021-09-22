@@ -184,6 +184,11 @@ footer {
     margin-bottom: 5px;
 }
 
+.links dl dt:hover {
+    color: #00a4ff;
+    cursor: pointer;
+}
+
 .links dl dd a {
     color: #333;
     font-size: 12px;

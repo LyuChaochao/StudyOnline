@@ -1,0 +1,872 @@
+// body背景颜色
+body {
+    background-color: #F3F5F7;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+@import: #666;
+@import-hh:#333;
+@import-blue:#00A4FF;
+//顶部模块
+.top {
+    width: 100%;
+    .logo {
+        height: 70px;
+        padding-left: 80px;
+        display: flex;
+        img {
+            margin-top: 25px;
+            width: 150px;
+            height: 30px;
+        }
+        ul {
+            display: flex;
+            line-height: 70px;
+            margin-left: 40px;
+            li {
+                margin-right: 35px;
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .search {
+        display: flex;
+        margin: auto 0 auto 200px;
+        input {
+            width: 250px;
+            height: 25px;
+            border: 1px solid @import-blue;
+        }
+        div {
+            width: 30px;
+            height: 27px;
+        }
+    }
+    span {
+        font-size: 6px;
+        line-height: 70px;
+        margin-left: 13.5px;
+        color: @import;
+    }
+    .remind {
+        margin: 5px 25px 0 25px;
+        .remind-dd {
+            width: 10px;
+            height: 11px;
+        }
+    }
+    .user {
+        font-size: 10px;
+        color: @import;
+        line-height: 70px;
+        img {
+            width: 21px;
+            height: 21px;
+            margin-top: 0;
+        }
+    }
+    .imgs {
+        img {
+            width: 100%;
+            height: 120px;
+        }
+    }
+}
+// 个人中心
+//左侧页面布局
+.tap {
+    width: 875px;
+    margin: 0 auto;
+    display: flex;
+    //
+    .center {
+        width: 170px;
+        height: 550px;
+        background-color: #fff;
+        top: 160px;
+        left: 180px;
+        padding: 0 20px;
+        margin: -50px 20px 0 0;
+        .personal {
+            text-align: center;
+            h3 {
+                margin-top: 20px;
+                color: @import-blue;
+            }
+            .head {
+                width: 130px;
+                height: 130px;
+                margin: 25px auto 18px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+            span {
+                font-size: 11px;
+                color: #333;
+            }
+        }
+        
+        .box { 
+            margin-top: 35px;
+            .current {
+                color: @import-blue;
+            }
+            ul > li {
+                &:nth-child(-n + 5) a {
+                    border-bottom: 1px solid #D7D7D7;
+                }
+                    a {
+                        display: block;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 13px;
+                        em {
+                            width: 13px;
+                            height: 13px;
+                            margin-left: 13px;
+                        }
+                        
+                        span {
+                            display: inline-block;
+                            width: 70px;
+                            margin: 0 40px 0 15px;
+                        }
+                    }
+            }
+        }
+    }
+    //右侧网页布局
+    //我的课程模块
+    .content {
+        width: 645px;
+        h4 {
+            color: @import-blue;
+            font-size: 11px;
+            margin: 15px 0;
+        }
+        .course-top{
+            display: flex;
+            .course-box {
+                display: flex;
+                width: 450px;
+                height: 115px;
+                background-color: #fff;
+                .hot > img {
+                    width: 43px;
+                    height: 20px;
+                    margin: 20px 20px 0 -3px;
+                }
+                .learning {
+                    margin-top: 20px;
+                    .one {
+                        span {
+                            color: @import;
+                        font-size: 11px;
+                        }
+                        i {
+                            font-size: 14px;
+                            padding: 0 5px;
+                        }
+                        em {
+                            display: inline-block;
+                            width: 43px;
+                            height: 16px;
+                            border: 1px solid @import-blue;
+                            text-align: center;
+                            font-size: 11px;
+                            color: @import-blue;
+                        }
+                    }
+                    .tow {
+                        margin: 5px 0;
+                        span {
+                            color: @import-blue;
+                            font-size: 11px;
+                            img {
+                                width: 11px;
+                                height: 11px;
+                            }
+                        }
+                        i {
+                            font-size: 14px;
+                            color: @import-blue;
+                            margin: 0 35px 0 5px;
+                        }
+                        em {
+                            color: @import;
+                            font-size: 10px;
+                        }
+                    }
+                    .three {
+                        .swiper-active {
+                            background-color: @import-blue;
+                        }
+                        .swiper {
+                            margin-right: 2px;
+                            width: 8px;
+                            height: 8px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            border: 1px solid @import-blue;
+                        }
+                        i,em {
+                            font-size: 11px;
+                            color: @import;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            .right {
+                width: 194px;
+                height: 115px;
+                background-color: #fff;
+                margin-left: 1px;
+                position: relative;
+                .float {
+                    float: right;
+                    margin-right: 5px;
+                    color: @import;
+                }
+                .left-top,
+                .left-bottom {
+                    width: 9px;
+                    height: 9px;
+                    background: #F3F5F7 ;
+                    border-radius: 50px;
+                    position: absolute;
+                }
+                .left-top {
+                    left: -5px;
+                    top: -5px;
+                }
+                .left-bottom {
+                    left: -5px;
+                    bottom: -5px;
+                }
+                .evaluation {
+                    padding-top: 24px;
+                    .current {
+                        background-color: #FF7C2D;
+                        color: #fff;
+                    }
+                    a {
+                        display: block;
+                        margin: 0 auto;
+                        width: 100px;
+                        height: 28px;
+                        border: 1px solid #FF7C2D;
+                        text-align: center;
+                        line-height: 28px;
+                        font-size: 13px;
+                        font-weight: bold;
+                        color: #FF7C2D;
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+        }
+        .time {
+            display: flex;
+            margin-bottom: 7px;
+            height: 28px;
+            background-color: #fff;
+            font-size: 10px;
+            line-height: 28px;
+            padding: 0 10px;
+            justify-content: space-between;
+            .current {
+                color: @import-blue;
+            }
+            .left > a {
+                color: @import;
+                span {
+                    padding: 0 10px;
+                    &:nth-child(-n+1)  {
+                        border-right: 1px solid @import;
+                    }
+                }
+            }
+            .right > a {
+                color: @import;
+                span {
+                    padding: 0 10px;
+                    &:nth-child(-n+3)  {
+                        border-right: 1px solid @import;
+                    }
+                }
+            }
+        }
+        .the-toolkit {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .course-framework{
+                margin-bottom: 7px;
+                .course-box {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 319px;
+                    height: 125px;
+                    background-color: #fff;
+                    .hot > img {
+                        width: 43px;
+                        height: 20px;
+                        margin: 20px 20px 0 -3px;
+                    }
+                    .learning {
+                        margin-top: 20px;
+                        .one {
+                            span {
+                                color: @import;
+                            font-size: 11px;
+                            }
+                            i {
+                                font-size: 14px;
+                                padding: 0 5px;
+                            }
+                            em {
+                                display: inline-block;
+                                width: 43px;
+                                height: 16px;
+                                border: 1px solid @import-blue;
+                                text-align: center;
+                                font-size: 11px;
+                                color: @import-blue;
+                            }
+                        }
+                        .tow {
+                            margin: 5px 0;
+                            span {
+                                color: @import-blue;
+                                font-size: 11px;
+                                img {
+                                    width: 11px;
+                                    height: 11px;
+                                }
+                            }
+                            i {
+                                font-size: 14px;
+                                color: @import-blue;
+                                margin: 0 35px 0 5px;
+                            }
+                        }
+                        .em {
+                            color: @import;
+                            font-size: 10px;
+                        }
+                        .three {
+                            .swiper-active {
+                                background-color: @import-blue;
+                            }
+                            .swiper {
+                                margin-right: 2px;
+                                width: 8px;
+                                height: 8px;
+                                display: inline-block;
+                                border-radius: 50%;
+                                border: 1px solid @import-blue;
+                            }
+                            i,em {
+                                vertical-align: middle;
+                                font-size: 11px;
+                                color: @import;
+                            }
+                        }
+                    }
+                    .learning-1 {
+                        margin: 20px 0 0 61px;
+                        .one {
+                            span {
+                                color: @import;
+                            font-size: 11px;
+                            }
+                            i {
+                                font-size: 14px;
+                                padding: 0 5px;
+                            }
+                            em {
+                                display: inline-block;
+                                width: 43px;
+                                height: 16px;
+                                border: 1px solid #999;
+                                text-align: center;
+                                font-size: 11px;
+                                color: #999;
+                            }
+                            .green {
+                                border: 1px solid #35B558;
+                                color: #35B558;
+                            }
+                        }
+                        .em {
+                            color: @import;
+                            font-size: 10px;
+                            margin: 18px 0 20px 0;
+                        }
+                        .three {
+                            .star {
+                                display: inline-block;
+                                width: 75px;
+                                height: 14px;
+                                background-size: contain;
+                                margin-right: 9px;
+                            }
+                            i,em {
+                                vertical-align: middle;
+                                font-size: 11px;
+                                color: @import;
+                            }
+                            .orange {
+                                color: #FF7C2D;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    width: 319px;
+                    height: 50px;
+                    background-color: #fff;
+                    margin-top: 1px;
+                    position: relative;
+                    .left-top,
+                    .right-top {
+                        width: 9px;
+                        height: 9px;
+                        background: #F3F5F7 ;
+                        border-radius: 50px;
+                        position: absolute;
+                    }
+                    .left-top {
+                        left: -5px;
+                        top: -5px;
+                    }
+                    .right-top {
+                        right: -5px;
+                        top: -5px;
+                    }
+                    .evaluation {
+                        margin: 0 auto;
+                        padding-top: 14px;
+                        display: flex;
+                        .current {
+                            background-color: @import-blue;
+                            color: #fff;
+                        }
+                        a {
+                            display: block;
+                            width: 70px;
+                            height: 20px;
+                            border: 1px solid @import-blue;
+                            text-align: center;
+                            line-height: 20px;
+                            font-size: 10px;
+                            // font-weight: bold;
+                            color: @import-blue;
+                            &:first-child {
+                                margin: 0 21px 0 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .problem {
+            height: 28px;
+            background-color: #fff;
+            a {
+                color: @import-blue;
+                font-size: 11px;
+                font-weight: 700;
+                line-height: 28px;
+                &:first-child {
+                    margin: 0 85px 0 20px;
+                }
+                img {
+                    width: 15px;
+                    height: 15px;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+    //我的订单模块
+    .order {
+        h4 {
+            margin: 15px 0;
+            .current {
+                color: @import-blue;
+            }
+            a {
+                color: @import;
+                font-size: 11px;
+                padding: 0 25px;
+                &:nth-child(-n+3) {
+                    border-right: 1px solid @import;
+                }
+            }
+        }
+        .information {
+            width: 645px;
+            height: 28px;
+            background-color: #fff;
+            font-size: 9px;
+            line-height: 28px;
+            font-weight: 700;
+            margin-bottom: 7px;
+            span {
+                &:first-child {
+                    margin: 0 130px;
+                }
+            }
+            .information-trading {
+                margin-right: 35px;
+            }
+        }
+        .course {
+            height: 125px;
+            background-color: #fff;
+            margin-bottom: 7px;
+            .number {
+                border-bottom: 1px solid #eee;
+                span {
+                    font-size: 10px;
+                    color: @import;
+                    &:first-child {
+                        margin: 0 25px 0 18px;
+                    }
+                }
+                .trash {
+                    float: right;
+                    margin-right: 15px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            .goods {
+                padding: 15px 15px 0;
+                display: flex;
+                img {
+                    width: 100px;
+                    height: 70px;
+                    margin-right: 15px;
+                }
+                .score {
+                    p {
+                        .star {
+                            display: inline-block;
+                            width: 75px;
+                            height: 14px;
+                            background-size: contain;
+                        }
+                        i,em {
+                            font-size: 11px;
+                            color: @import;
+                        }
+                        em {
+                            color: #FF7C2D;
+                        }
+                    }
+                    .date {
+                        font-size: 10px;
+                        color: #DD340D;
+                        vertical-align: bottom;
+                        margin-top: 7px;
+                    }
+                }
+                .money {
+                    span {
+                        font-size: 11px;
+                        line-height: 70px;
+                        font-weight: 700;
+                        &:nth-child(-n+2) {
+                            margin-right: 40px;
+                        }
+                    }
+                }
+                .pay {
+                    font-size: 10px;
+                    margin-left: 35px;
+                    .pay-for > a , .cancel > a ,     
+                    .right-pieces > a {
+                        display: block;
+                        width: 70px;
+                        height: 25px;
+                        text-align: center;
+                        line-height: 25px;
+                        color: #FF592D;
+                        border: 1px solid #FF592D;
+                    }
+                    .pay-for .current{
+                        color: #fff;
+                        background-color: #FF592D;
+                    }
+                    .right-pieces > a {
+                        color: @import-blue;
+                        border: 1px solid @import-blue;
+                    }
+                }
+            }
+        }
+        .pages {
+            text-align: center;
+            margin-top: 25px;
+            &:nth-child(odd) i {
+                margin-right: 10px;
+            }
+            i, .swiper-batton {
+                font-size: 10px;
+                color: #999;
+            }
+            .swiper-batton {
+                display: inline-block;
+                .swiper-pages {
+                    display: inline-block;
+                    text-align: center;
+                    width: 28px;
+                    height: 28px;
+                    line-height: 28px;
+                }
+                .current {
+                    background-color: @import-blue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    //个人设置
+    .personal-settings {
+        .account-settings {
+            h4 {
+                color: @import-blue;
+                font-size: 11px;
+                margin: 15px 0 15px 14px;
+            }
+            .settings-page {
+                background-color: #fff;
+                padding: 15px 0 10px 23px;
+                .portrait {
+                    display: flex;
+                    .nickname {
+                        margin-left: 15px;
+                        padding-top: 14px;
+                        span {
+                            font-size: 15px;
+                        }
+                        i {
+                            color: @import-blue;
+                            font-size: 10px;
+                            margin-left: 7px;
+                        }
+                    }
+                }
+                p {
+                    font-size: 11px;
+                    color: @import-blue;
+                    margin: 35px 0;
+                    i {
+                        color: #FF592D;
+                        margin-left: 5px;
+                    }
+                }
+                .contact {
+                    display: flex;
+                    margin-bottom: 30px;
+                    img {
+                        width: 20px;
+                        height: 25px;
+                        margin-top: 10px;
+                    }
+                    .binding {
+                        width: 250px;
+                        margin: 0 250px 0 15px;
+                        span {
+                            font-size: 13px;
+                            font-weight: 700;
+                            margin-right: 10px;
+                        }
+                        i,em {
+                            font-size: 11px;
+                            color: #999;
+                        }
+                        .validation {
+                            color: #FF592D;
+                        }
+                    }
+                    .modify {
+                        margin-top: 11.5px;
+                        text-align: center;
+                        line-height: 25px;
+                        width: 60px;
+                        height: 25px;
+                        font-size: 10px;
+                        color: #999;
+                        border: 1px solid #999;
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+        //修改昵称页
+        .modify-the-nickname {
+            p {
+                margin: 15px 0;
+                font-size: 10px;
+                color: #999;
+                span {
+                    font-size: 10px;
+                    color: #000;
+                }
+            }
+            .warning {
+                height: 30px;
+                font-size: 10px;
+                color: #999;
+                line-height: 30px;
+                background-color: #FAFAEB;
+                img {
+                    width: 12px;
+                    height: 12px;
+                    margin:  -2px 0 0 20px;
+                }
+            }
+            .text-writing {
+                width: 645px;
+                height: 370px;
+                background-color: #fff;
+                text-align: center;
+                padding-top: 50px;
+                .new-nickname {
+                    input {
+                        border: 1px solid #CACACA;
+                        width: 250px;
+                        height: 20px;
+                    }
+                }
+                .check-code {
+                    input {
+                        border: 1px solid #CACACA;
+                        width: 150px;
+                        height: 20px;
+                    }
+                }
+                div {
+                    display: inline-block;
+                    margin-left: 10px;
+                    width: 90px;
+                    height: 25px;
+                    background-color: #eee;
+                    color: @import-blue;
+                    font-weight: 700;
+                }
+            }
+        }
+        // 修改头像页
+        .modify-the-picture {
+            p {
+                margin: 15px 0;
+                font-size: 10px;
+                color: #999;
+                span {
+                    font-size: 10px;
+                    color: #000;
+                }
+            }
+            .modify-the-picture-page {
+                display: flex;
+                height: 425px;
+                background-color: #fff;
+                padding: 25px 0  0 30px;
+                img {
+                    height: 121px;
+                }
+                .prompt {
+                    width: 458px;
+                    margin-left: 20px;
+                    margin-right: 16px;
+                    span {
+                        display: block;
+                        font-size: 10px;
+                        margin-bottom: 25px;
+                        color: #999;
+                    }
+                    a {
+                        display: block;
+                        width: 80px;
+                        height: 25px;
+                        font-size: 10px;
+                        border: 1px solid @import-blue;
+                        margin: 0 auto;
+                        text-align: center;
+                        line-height: 25px;
+                        color: @import-blue;
+                        &:nth-child(2) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .current {
+                        background-color: @import-blue;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// 底部模块
+.bottom {
+    width: 100%;
+    height: 155px;
+    background-color: #fff;
+    padding-top: 25px;
+    margin-top: 40px;
+    .w {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo-por {
+        img {
+            height: 40px;
+        }
+    }
+    p {
+        width: 432px;
+        height: 45px;
+        font-size: 9px;
+        color: @import;
+        margin: 10px 0 10px 0;
+    }
+    .app {
+        a {
+            display: block;
+            width: 85px;
+            height: 26px;
+            border: 1px solid @import-blue;
+            color: @import-blue;
+            font-size: 11px;
+            text-align: center;
+            line-height: 26px;
+        }
+    }
+    .about {
+        h4 {
+            // font-size: 11px;
+            color: @import-hh;
+        }
+        a {
+            font-size: 9px;
+            color: @import-hh;
+        }
+    }
+}

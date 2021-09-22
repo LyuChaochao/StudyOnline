@@ -129,17 +129,15 @@ h2 {
     font-size: 16px;
 }
 
-.reg_form ul li button {
+.reg_form ul li .over {
     width: 400px;
     height: 44px;
     text-align: center;
     line-height: 44px;
     background-color: #00a4ff;
-}
-
-.reg_form ul li button a {
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
 }
 
 .reg_form ul li:nth-child(5) {

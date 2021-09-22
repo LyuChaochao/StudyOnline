@@ -1,0 +1,51 @@
+{
+  "id": "2753513",
+  "name": "字体图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "24366225",
+      "name": "书",
+      "font_class": "shu-copy",
+      "unicode": "e81c",
+      "unicode_decimal": 59420
+    },
+    {
+      "icon_id": "24366229",
+      "name": "退出",
+      "font_class": "tuichu-copy",
+      "unicode": "e81d",
+      "unicode_decimal": 59421
+    },
+    {
+      "icon_id": "24366230",
+      "name": "心 (1)",
+      "font_class": "xin-copy",
+      "unicode": "e81e",
+      "unicode_decimal": 59422
+    },
+    {
+      "icon_id": "24366255",
+      "name": "订单",
+      "font_class": "icon--copy",
+      "unicode": "e81f",
+      "unicode_decimal": 59423
+    },
+    {
+      "icon_id": "24366259",
+      "name": "设 置",
+      "font_class": "shezhi-copy",
+      "unicode": "e820",
+      "unicode_decimal": 59424
+    },
+    {
+      "icon_id": "24366262",
+      "name": "铃铛",
+      "font_class": "lingdang-copy",
+      "unicode": "e821",
+      "unicode_decimal": 59425
+    }
+  ]
+}

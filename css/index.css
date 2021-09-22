@@ -1,6 +1,6 @@
 /* banner区域 */
 
-.nav .current {
+.nav ul li .current {
     color: #00a4ff;
 }
 
@@ -10,11 +10,65 @@
     margin: 0 auto;
 }
 
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 12px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-l {
+    left: 190px;
+}
+
+.arrow-r {
+    right: 230px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.circle li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .plot {
     position: absolute;
+    left: 0;
     float: left;
+    width: 1500%;
+}
+
+.focus {
+    position: absolute;
+    overflow: hidden;
     left: -360px;
     width: 1920px;
+    height: 420px;
 }
 
 .banner .plot li {
@@ -81,11 +135,13 @@
     width: 420px;
     height: 420px;
     padding-left: 20px;
+    padding-top: 20px;
+    z-index: 999;
 }
 
 .subnav-r {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 20px;
     font-size: 16px;
 }
 
@@ -181,6 +237,7 @@
 
 .goods ul li {
     float: left;
+    transition: all .5s;
     cursor: pointer;
 }
 
@@ -193,6 +250,10 @@
 
 .goods ul li:hover a {
     color: #00a4ff;
+}
+
+.goods ul li:hover {
+    transform: scale(1.06);
 }
 
 .mod {
@@ -234,7 +295,7 @@
     width: 1225px;
 }
 
-.box-bd ul li {
+.box-bd>ul>li {
     position: relative;
     cursor: pointer;
     float: left;
@@ -243,6 +304,11 @@
     background-color: #fff;
     margin-right: 15px;
     margin-bottom: 15px;
+    transition: all .5s;
+}
+
+.box-bd>ul>li:hover {
+    transform: scale(1.05);
 }
 
 .box-bd ul li>img {
@@ -257,6 +323,10 @@
     font-size: 14px;
     color: #050505;
     font-weight: 400;
+}
+
+.box-bd ul li h4:hover {
+    color: #00A4FF;
 }
 
 .box-bd ul li em {
@@ -319,14 +389,57 @@
 }
 
 .class-bd {
+    position: relative;
     height: 392px;
+}
+
+.php {
+    position: absolute;
+    top: 46px;
+    left: 35px;
+    width: 161px;
+    height: 266px;
+    color: #fff;
+}
+
+.php>h3:hover {
+    color: #00a4ff;
+}
+
+.php>h4:hover {
+    color: #00a4ff;
+}
+
+.php>p:hover {
+    color: #00a4ff;
+}
+
+.php h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.php h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+
+.php p {
+    margin-bottom: 52px;
+    margin-left: 16px;
+    font-size: 14px;
 }
 
 .class-l {
     float: left;
     cursor: pointer;
-    height: 392px;
     width: 228px;
+    transition: all 0.5s;
+}
+
+.class-l:hover {
+    transform: scale(1.05);
 }
 
 .class-top {
@@ -335,6 +448,11 @@
     width: 957px;
     height: 100px;
     margin-left: 15px;
+    transition: all 0.5s;
+}
+
+.class-top:hover {
+    transform: scale(1.02);
 }
 
 .class-r {
@@ -347,7 +465,7 @@
 }
 
 .class-r ul {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 1201px;
     margin-top: 23px;
 }
@@ -360,6 +478,11 @@
     height: 270px;
     background-color: #fff;
     margin-left: 15px;
+    transition: all .5s;
+}
+
+.class-r ul li:hover {
+    transform: scale(1.05);
 }
 
 .class-r ul li>img {
@@ -374,6 +497,10 @@
     font-size: 14px;
     color: #050505;
     font-weight: 400;
+}
+
+.class-r ul li h4:hover {
+    color: #00A4FF;
 }
 
 .class-r ul li em {
@@ -428,6 +555,11 @@
     margin-bottom: 31px;
     background-color: #e6ebff;
     cursor: pointer;
+    transition: all .5s;
+}
+
+.famous-bd ul li:hover {
+    transform: scale(1.03);
 }
 
 .famous-bd ul li img {
@@ -507,8 +639,9 @@
 /*侧边导航lan*/
 
 .fixedtool {
+    display: none;
     position: fixed;
-    top: 300px;
+    top: 150px;
     left: 50%;
     margin-left: -737px;
     width: 130px;
@@ -527,4 +660,32 @@
 
 .fixedtool .current {
     color: #00A4FF;
+}
+
+.back {
+    position: fixed;
+    width: 60px;
+    height: 100px;
+    background-color: #fff;
+    left: 50%;
+    top: 700px;
+    margin-left: 605px;
+}
+
+.back>button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.back>button>span {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 1px;
 }

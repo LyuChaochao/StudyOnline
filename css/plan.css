@@ -7,6 +7,10 @@ body {
     background-color: #F3F5F7;
 } */
 
+.nav ul li .current {
+    color: #00a4ff;
+}
+
 .banner {
     height: 370px;
     background: transparent url(../images/banner@2x.png) no-repeat center;

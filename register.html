@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/base.css">
     <!-- 引入注册页面样式 -->
     <link rel="stylesheet" href="css/register.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+
 </head>
 
 <body>
@@ -25,8 +28,8 @@
     </div>
     <div class="login clearfix w">
         <ul>
-            <li><a href="javascript:;" class="current">登录</a></li>
-            <li><a href="javascript:;">注册</a></li>
+            <li><a href="javascript:;">登录</a></li>
+            <li><a href="javascript:;" class="current">注册</a></li>
         </ul>
     </div>
 
@@ -34,26 +37,26 @@
         <form action="">
             <ul>
                 <li><label for="">手机号码</label><br>
-                    <input type="text" class="inp" value="请输入11位手机号码">
+                    <input type="text" class="inp" id="tel" value="请输入11位手机号码">
                     <span class="error"> <i class="error_icon"></i>手机号输入有误，请重新输入</span>
                 </li>
                 <li><label for="">短信验证码</label><br>
-                    <input type="text" class="inp" value="请输入6位短信验证码">
+                    <input type="text" class="inp" id="msg" value="请输入6位短信验证码">
                     <span class="error"><i class="error_icon"></i>短信验证码错误</span>
                 </li>
                 <li><label for="">设置密码</label><br>
-                    <input type="text" class="inp" value="请输入6-16位字符">
+                    <input type="text" class="inp" id="pwd" value="请输入6-16位字符">
                     <span class="error"> <i class="error_icon"></i>密码输入有误，请重新输入</span>
                 </li>
                 <li><label for="">确认密码</label><br>
-                    <input type="text" class="inp" value="再次请输入6-16位字符">
+                    <input type="text" class="inp" id="surepwd" value="再次请输入6-16位字符">
                     <span class="error"> <i class="error_icon"></i>密码输入不一致，请重新输入</span>
                 </li>
                 <li>
                     <input type="checkbox" class="memory"> 同意协议并注册<em> <a href="javascript:;">《学成网注册协议》</a> </em>
                 </li>
                 <li>
-                    <button><a href="javascript:;">完成注册</a></button>
+                    <input type="submit" value="完成注册" class="over">
                 </li>
             </ul>
 

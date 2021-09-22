@@ -20,6 +20,10 @@
 
 /* banner模块开始 */
 
+.nav ul li .current {
+    color: #00a4ff;
+}
+
 .banner {
     height: 240px;
     background: transparent url(../images/b.png) no-repeat center;
