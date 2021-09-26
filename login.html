@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/base.css">
     <!-- 引入登录样式 -->
     <link rel="stylesheet" href="css/login.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/login.js"></script>
 </head>
 
 <body>
@@ -25,24 +27,24 @@
     </div>
     <div class="login clearfix w">
         <ul>
-            <li><a href="" class="current">登录</a></li>
-            <li><a href="">注册</a></li>
+            <li><a href="login.html" class="current">登录</a></li>
+            <li><a href="register.html">注册</a></li>
         </ul>
     </div>
     <div class="reg_form w">
-        <form action="">
+        <form action="index.html">
             <ul>
                 <li><label for="">账户名</label><br>
-                    <input type="text" class="inp">
+                    <input type="text" class="inp" id="user" name="uname" value="">
                     <span class="error"> <i class="error_icon"></i> 账户名输入有误，请重新输入</span></li>
                 <li><label for="">登录密码</label><br>
-                    <input type="text" class="inp">
+                    <input type="password" class="inp" id="pwd" value="">
                     <span class="error"><i class="error_icon"></i> 密码输入有误，请重新输入</span></li>
                 <li>
-                    <input type="checkbox" class="memory"> 自动登录 <em> <a href="javascript:;">忘记密码</a> </em>
+                    <input type="checkbox" class="memory" id="remember"> 自动登录 <em> <a href="javascript:;">忘记密码</a> </em>
                 </li>
                 <li>
-                    <button><a href="javascript:;">登录</a></button>
+                    <input type="submit" value="登录" class="pull">
                 </li>
             </ul>
 

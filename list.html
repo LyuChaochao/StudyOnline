@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成网课程列表页</title>
+    <link rel="stylesheet" href="lib/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+    <!-- header区域star -->
+    <div class="header w">
+        <!-- logo部分 -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="学成在线">学成在线</a>
+            </h1>
+        </div>
+        <!-- 导航栏部分 nav -->
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" class="current">首页</a></li>
+                <li><a href="introduction.html">课程</a></li>
+                <li><a href="plan.html">职业规划</a></li>
+            </ul>
+        </div>
+        <!-- 搜索模块 -->
+        <div class="search">
+            <input type="text" value="输入关键词">
+            <button><span class="icon-search"></span></button>
+
+        </div>
+        <!-- 用户模块 -->
+        <div class="personal"> <a href="set.html">个人中心</a></div>
+        <div class="remind">
+            <a href="javascript:;"></a>
+        </div>
+        <div class="user">
+            <a href="set.html">
+                <img src="images/t01b1ad8b63b90a5581.png"> qq-lilei</a>
+        </div>
+        <div class="login"><a href="login.html">登录</a> / <a href="register.html">注册</a></div>
+
+    </div>
+    <!-- header区域end -->
+
+    <!-- 分类导航模块开始 -->
+    <nav>
+        <div class="courseNav w">
+            <!-- 第一分类部分 -->
+            <div class="firstCate">
+                <h4>一级分类：</h4>
+                <ul>
+
+                </ul>
+            </div>
+            <!-- 第二分类部分 -->
+            <div class="secondCate">
+                <h4>二级分类：</h4>
+                <ul>
+
+                </ul>
+                <span><a href="javascript:;" id="more">更多<em></em></a></span>
+            </div>
+            <!-- 等级分类部分 -->
+            <div class="levelCate">
+                <h4>难度等级：</h4>
+                <ul>
+                    <li><a href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">初级</a></li>
+                    <li><a href="javascript:;">中级</a></li>
+                    <li><a href="javascript:;">高级</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 分类导航模块结束 -->
+
+    <!-- 中间课程列表部分开始 -->
+    <section class="w clearfix">
+        <!-- 课程列表主体部分开始 -->
+        <div class="courseList">
+            <!-- 课程列表头部 -->
+            <div class="courseList_head">
+                <div class="courseList_head_left">
+                    <ul>
+                        <li><a href="javascript:;" class="current" id="rec">推荐</a></li>
+                        <li><a href="javascript:;" id="new">最新</a></li>
+                        <li><a href="javascript:;" id="hot">热评</a></li>
+                    </ul>
+                </div>
+                <div class="courseList_head_right">
+                    <p><span id="prevspan"></span>&nbsp;&nbsp;<em id="em1"></em>&nbsp;/&nbsp;<em id="em2"></em>&nbsp;&nbsp;<span id="nextspan"></span></p>
+                </div>
+            </div>
+            <!-- 课程列表主体 -->
+            <div class="courseList_body">
+                <ul id="fenye">
+                    <!-- <li><img src="images/精品推荐01.png" alt="">
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span>
+                        <div class="hot"></div>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- 课程列表分页 -->
+            <div class="courseList_foot" id="page">
+
+            </div>
+        </div>
+        <!-- 课程列表主体部分结束 -->
+
+        <!-- 课程列表右边部分 -->
+        <aside>
+            <!-- 精品top部分 -->
+            <div class="courseTop">
+                <h5>精品TOP榜</h5>
+                <div class="courseTop_con">
+                    <div>
+                        通过对ThinkPHP框架基础知识的讲解，带领大家由浅入深轻松掌握ThinkPHP的理论基础，更加全面的掌握ThinkPHP框架运行机制...
+                    </div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                </div>
+            </div>
+            <!-- 猜你喜欢部分 -->
+            <div class="courseLike">
+                <h5>猜你喜欢</h5>
+                <div class="courseLike_con">
+                    <div>
+                        通过对ThinkPHP框架基础知识的讲解，带领大家由浅入深轻松掌握ThinkPHP的理论基础，更加全面的掌握ThinkPHP框架运行机制...
+                    </div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                    <div>
+                        <p>Think PHP 5.0 博客系统实战项目演练 </p>
+                        <span><em>高级</em>&nbsp;&nbsp;•&nbsp;&nbsp;1125人在学习</span></div>
+                </div>
+            </div>
+        </aside>
+        <!-- 课程列表右边部分结束 -->
+
+    </section>
+    <!-- 中间课程部分结束 -->
+
+    <!-- footer区域star -->
+    <footer>
+        <div class="w">
+            <div class="copyright">
+                <img src="images/logo@2x.png" alt="">
+                <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br> © 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</p>
+                <a href="javascript:;" class="app">下载APP</a>
+            </div>
+            <div class="links">
+                <dl>
+                    <dt>关于学成网</dt>
+                    <dd><a href="javascript:;">关于</a></dd>
+                    <dd><a href="javascript:;">管理团队</a></dd>
+                    <dd><a href="javascript:;">工作机会</a></dd>
+                    <dd><a href="javascript:;">客户服务</a></dd>
+                    <dd><a href="javascript:;">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="javascript:;">如何注册</a></dd>
+                    <dd><a href="javascript:;">如何选课</a></dd>
+                    <dd><a href="javascript:;">如何拿到毕业证</a></dd>
+                    <dd><a href="javascript:;">学分是什么</a></dd>
+                    <dd><a href="javascript:;">考试未通过怎么办</a></dd>
+                </dl>
+                <dl>
+                    <dt>合作伙伴</dt>
+                    <dd><a href="javascript:;">合作机构</a></dd>
+                    <dd><a href="javascript:;">合作导师</a></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <!-- foolter区域end -->
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/layui/layui.js" charset="utf-8"></script>
+    <script src="js/list.js"></script>
+</body>
+
+</html>

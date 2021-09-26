@@ -1,5 +1,20 @@
 $(function() {
 
+    //搜索框模块
+    $(".search input").focus(function() {
+        // console.log($(this).val());
+        if ($(this).val() === "输入关键词") {
+            $(this).val("");
+        }
+        $(this).css("color", "#333");
+    })
+    $(".search input").focusout(function() {
+        if ($(this).val() === "") {
+            $(this).val("输入关键词");
+        }
+        $(this).css("color", "#bfbfbf");
+    });
+
     // 给马上学习模块的字体添加鼠标经过换颜色
     $('.studynow ul li').hover(function() {
         $(this).find('h6').css('color', '#fff');
@@ -26,4 +41,24 @@ $(function() {
         var index = $(this).parent().index();
         $('main ul').eq(index).show().siblings().hide();
     })
+
+    // 读取本地存储的数据
+    function getDate() {
+        var data = localStorage.getItem("username");
+        if (data !== null) {
+            // 本地存储里面的数据是字符串格式的 但是我们需要的是对象格式的
+            return JSON.parse(data);
+        } else {
+            return [];
+        }
+    };
+    //渲染加载数据
+    function load() {
+        data = getDate();
+        // console.log(data);
+        $.each(data, function(i, n) {
+            $(".user").html('<a href="set.html"><img src="images/t01b1ad8b63b90a5581.png">' + n.title + '</a>').show().siblings(".login").hide();
+        });
+    };
+    load();
 })

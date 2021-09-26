@@ -117,16 +117,36 @@ body {
     color: #666;
 }
 
+.user a img {
+    height: 29px;
+}
+
 .personal a {
     color: #666;
 }
 
 .user {
+    display: none;
     position: absolute;
-    right: -137px;
+    width: 181px;
+    height: 30px;
+    right: -232px;
     top: 6px;
     font-size: 14px;
     color: #666;
+}
+
+.login {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: -126px;
+    color: #00a4ff;
+    font-size: 15px;
+}
+
+.login a {
+    color: #00a4ff;
 }
 
 

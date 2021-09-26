@@ -134,15 +134,12 @@ h2 {
     font-size: 15px;
 }
 
-.reg_form ul li button {
+.reg_form ul li .pull {
     width: 400px;
     height: 44px;
     text-align: center;
     line-height: 44px;
     background-color: #00a4ff;
-}
-
-.reg_form ul li button a {
     font-size: 20px;
     color: #fff;
 }

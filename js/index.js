@@ -1,4 +1,5 @@
 $(function() {
+
     //轮播图
     var plotWidth = $(".focus").width();
     var num = 0;
@@ -100,12 +101,12 @@ $(function() {
         $(this).css("color", "#333");
     })
     $(".search input").focusout(function() {
-            if ($(this).val() === "") {
-                $(this).val("输入关键词");
-            }
-            $(this).css("color", "#bfbfbf");
-        })
-        // banner部分左侧导航
+        if ($(this).val() === "") {
+            $(this).val("输入关键词");
+        }
+        $(this).css("color", "#bfbfbf");
+    });
+    // banner部分左侧导航
     $(".subnav li").mouseenter(function() {
         var index = $(this).index();
         // console.log(index);
@@ -169,9 +170,31 @@ $(function() {
     // 返回顶部
     $(".back").click(function() {
 
-        $("body, html").stop().animate({
-            scrollTop: 0
+            $("body, html").stop().animate({
+                scrollTop: 0
+            });
+        })
+        // 读取本地存储的数据
+    function getDate() {
+        var data = localStorage.getItem("username");
+        if (data !== null) {
+            // 本地存储里面的数据是字符串格式的 但是我们需要的是对象格式的
+            return JSON.parse(data);
+        } else {
+            return [];
+        }
+    };
+    //渲染加载数据
+    function load() {
+        data = getDate();
+        //个人中心跳转
+        if (data == '') {
+            $(".personal").html('<a href="login.html">个人中心</a>')
+        }
+        // console.log(data);
+        $.each(data, function(i, n) {
+            $(".user").html('<a href="set.html"><img src="images/t01b1ad8b63b90a5581.png">' + n.title + '</a>').show().siblings(".login").hide();
         });
-    })
-
+    };
+    load();
 })

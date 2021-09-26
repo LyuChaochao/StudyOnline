@@ -134,14 +134,17 @@
     background-color: #fff;
     width: 420px;
     height: 420px;
-    padding-left: 20px;
     padding-top: 20px;
+    padding-left: 20px;
     z-index: 999;
+}
+
+.subnav-r>ul>li a {
+    padding: 0 6px;
 }
 
 .subnav-r {
     display: inline-block;
-    padding: 0 20px;
     font-size: 16px;
 }
 
@@ -668,7 +671,7 @@
     height: 100px;
     background-color: #fff;
     left: 50%;
-    top: 700px;
+    top: 500px;
     margin-left: 605px;
 }
 

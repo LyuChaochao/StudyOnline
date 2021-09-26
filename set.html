@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/set.css">
     <link rel="stylesheet" href="inconfont/iconfont.css">
     <script src="./lib/jquery.min.js"></script>
+    <script src="./js/set.js"></script>
     <script src="./lib/bootstrap.min.js"></script>
 </head>
 
@@ -25,7 +26,7 @@
                     <li><a href="plan.html">职业规划</a></li>
                 </ul>
                 <div class="search">
-                    <input type="text" value="请输入内容">
+                    <input type="text" value="输入关键词">
                     <div style="background-image: url(./images/btn.png); background-size: contain;">
                     </div>
                 </div>
@@ -34,7 +35,7 @@
                     <img src="./images/提醒@2x.png" alt="" class="remind-dd">
                 </div>
                 <div class="user">
-                    <img src="./images/椭圆头像 7@2x.png" alt=""> qq-leishui
+                    <img src="./images/t01b1ad8b63b90a5581.png" alt=""> qq-leishui
                 </div>
             </div>
             <div class="imgs">
@@ -57,54 +58,40 @@
             </div>
             <div class="box">
                 <ul>
-                    <li>
-                        <a href="" class="current">
-                            <em class="iconfont icon-shu-copy"></em>
-                            <span>我的课程</span>
-                            <i>&gt;</i>
-                        </a>
+                    <li class="current">
+                        <em class="iconfont icon-shu-copy"></em>
+                        <span>我的课程</span>
+                        <i>&gt;</i>
                     </li>
                     <li>
-                        <a href="">
-                            <em class="iconfont icon-icon--copy"></em>
-                            <span>我的订单</span>
-                            <i>&gt;</i>
-                        </a>
+                        <em class="iconfont icon-icon--copy"></em>
+                        <span>我的订单</span>
+                        <i>&gt;</i>
                     </li>
                     <li>
-                        <a href="">
-                            <em class="iconfont icon-lingdang-copy"></em>
-                            <span>我的消息</span>
-                            <i>&gt;</i>
-                        </a>
+                        <em class="iconfont icon-lingdang-copy"></em>
+                        <span>我的消息</span>
+                        <i>&gt;</i>
                     </li>
                     <li>
-                        <a href="">
-                            <em class="iconfont icon-xin-copy"></em>
-                            <span>我的收藏</span>
-                            <i>&gt;</i>
-                        </a>
+                        <em class="iconfont icon-xin-copy"></em>
+                        <span>我的收藏</span>
+                        <i>&gt;</i>
                     </li>
                     <li>
-                        <a href="">
-                            <em class="iconfont icon-shezhi-copy "></em>
-                            <span>个人设置</span>
-                            <i>&gt;</i>
-                        </a>
+                        <em class="iconfont icon-shezhi-copy "></em>
+                        <span>个人设置</span>
+                        <i>&gt;</i>
                     </li>
-                    <li>
-                        <a href="">
-                            <em class="iconfont icon-tuichu-copy"></em>
-                            <span>退出</span>
-                            <i>&gt;</i>
-                        </a>
+                    <li class="out">
+                        <a href="index.html"><em class="iconfont icon-tuichu-copy"></em><span>退出</span><i>&gt;</i></a>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- 右侧网页布局 -->
         <!-- 我的课程 -->
-        <div class="content" style="display: block;">
+        <div class="content tap_con" style="display: block;">
             <div class="course">
                 <h4>最近学习课程</h4>
                 <div class="course-top">
@@ -120,9 +107,9 @@
                             </p>
                             <p class="tow">
                                 <span>
-                                        <img src="./images/播放图标 拷贝 2@2x.png" alt="">
-                                        正在学习
-                                    </span>
+                                            <img src="./images/播放图标 拷贝 2@2x.png" alt="">
+                                            正在学习
+                                        </span>
                                 <i>使用对象</i>
                                 <em>有效日期: 2016.06.05-2017.06.05</em>
                             </p>
@@ -141,8 +128,8 @@
                         <div class="left-bottom"></div>
                         <h5 class="float">●●●</h5>
                         <div class="evaluation">
-                            <a href="" class="current">继续学习</a>
-                            <a href="">课程评价</a>
+                            <a href="javascript:;" class="current">继续学习</a>
+                            <a href="javascript:;">课程评价</a>
                         </div>
                     </div>
                 </div>
@@ -150,13 +137,13 @@
                 <h4>全部课程</h4>
                 <div class="time">
                     <div class="left">
-                        <a href="">
+                        <a href="javascript:;">
                             <span class="current">按学习时间进行排序</span>
                             <span>按加入时间进行排序</span>
                         </a>
                     </div>
                     <div class="right">
-                        <a href="">
+                        <a href="javascript:;">
                             <span class="current">全部</span>
                             <span>付费</span>
                             <span>即将过期</span>
@@ -178,9 +165,9 @@
                                 </p>
                                 <p class="tow">
                                     <span>
-                                            <img src="./images/播放图标 拷贝 2@2x.png" alt="">
-                                            正在学习
-                                        </span>
+                                                <img src="./images/播放图标 拷贝 2@2x.png" alt="">
+                                                正在学习
+                                            </span>
                                     <i>使用对象</i>
                                 </p>
                                 <p class="em">有效日期: 2016.06.05-2017.06.05</p>
@@ -199,8 +186,8 @@
                             <div class="left-top"></div>
                             <div class="right-top"></div>
                             <div class="evaluation">
-                                <a href="" class="current">继续学习</a>
-                                <a href="">课程评价</a>
+                                <a href="javascript:;" class="current">继续学习</a>
+                                <a href="javascript:;">课程评价</a>
                             </div>
                         </div>
                     </div>
@@ -217,9 +204,9 @@
                                 </p>
                                 <p class="tow">
                                     <span>
-                                            <img src="./images/播放图标 拷贝 2@2x.png" alt="">
-                                            正在学习
-                                        </span>
+                                                <img src="./images/播放图标 拷贝 2@2x.png" alt="">
+                                                正在学习
+                                            </span>
                                     <i>使用对象</i>
                                 </p>
                                 <p class="em">有效日期: 2016.06.05-2017.06.05</p>
@@ -238,8 +225,8 @@
                             <div class="left-top"></div>
                             <div class="right-top"></div>
                             <div class="evaluation">
-                                <a href="" class="current">继续学习</a>
-                                <a href="">课程评价</a>
+                                <a href="javascript:;" class="current">继续学习</a>
+                                <a href="javascript:;">课程评价</a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +243,7 @@
                                 </p>
                                 <p class="three">
                                     <span class="star" style="background-image: url(./images/星星.png);">
-                                        </span>
+                                            </span>
                                     <i>课程打分</i>
                                     <em class="orange">4.9星</em>
                                 </p>
@@ -267,8 +254,8 @@
                             <div class="left-top"></div>
                             <div class="right-top"></div>
                             <div class="evaluation">
-                                <a href="" class="current">继续学习</a>
-                                <a href="">课程评价</a>
+                                <a href="javascript:;" class="current">继续学习</a>
+                                <a href="javascript:;">课程评价</a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +272,7 @@
                                 </p>
                                 <p class="three">
                                     <span class="star" style="background-image: url(./images/星星.png);">
-                                        </span>
+                                            </span>
                                     <i>课程打分</i>
                                     <em class="orange">4.9星</em>
                                 </p>
@@ -296,29 +283,29 @@
                             <div class="left-top"></div>
                             <div class="right-top"></div>
                             <div class="evaluation">
-                                <a href="" class="current">继续学习</a>
-                                <a href="">课程评价</a>
+                                <a href="javascript:;" class="current">继续学习</a>
+                                <a href="javascript:;">课程评价</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="problem">
-                    <a href="">
+                    <a href="javascript:;">
                         <img src="./images/图层 167@2x.png" alt=""> 帮助和常见问题 >
                     </a>
-                    <a href="">
+                    <a href="javascript:;">
                         <img src="./images/图层 167 拷贝@2x.png" alt=""> 问题反馈 >
                     </a>
                 </div>
             </div>
         </div>
         <!-- 我的订单 -->
-        <div class="order" style="display: none;">
+        <div class="order tap_con">
             <h4>
-                <a href="" class="current">全部课程 </a>
-                <a href="">待付款</a>
-                <a href="">已完成</a>
-                <a href="">已关闭</a>
+                <a href="javascript:;" class="current">全部课程 </a>
+                <a href="javascript:;">待付款</a>
+                <a href="javascript:;">已完成</a>
+                <a href="javascript:;">已关闭</a>
             </h4>
             <div class="information">
                 <span>课程信息</span>
@@ -339,7 +326,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -352,10 +339,10 @@
                     </div>
                     <div class="pay">
                         <div class="pay-for">
-                            <a href="" class="current" style="margin-bottom: 10px;">去支付</a>
+                            <a href="javascript:;" class="current" style="margin-bottom: 10px;">去支付</a>
                         </div>
                         <div class="cancel">
-                            <a href="">取消订单</a>
+                            <a href="javascript:;">取消订单</a>
                         </div>
                     </div>
                 </div>
@@ -371,7 +358,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -384,10 +371,10 @@
                     </div>
                     <div class="pay">
                         <div class="pay-for">
-                            <a href="" class="current" style="margin-bottom: 10px;">去支付</a>
+                            <a href="javascript:;" class="current" style="margin-bottom: 10px;">去支付</a>
                         </div>
                         <div class="cancel">
-                            <a href="">取消订单</a>
+                            <a href="javascript:;">取消订单</a>
                         </div>
                     </div>
                 </div>
@@ -403,7 +390,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -416,7 +403,7 @@
                     </div>
                     <div class="pay">
                         <div class="right-pieces">
-                            <a href="">课程评价</a>
+                            <a href="javascript:;">课程评价</a>
                         </div>
                     </div>
                 </div>
@@ -432,7 +419,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -445,7 +432,7 @@
                     </div>
                     <div class="pay">
                         <div class="right-pieces">
-                            <a href="">课程评价</a>
+                            <a href="javascript:;">课程评价</a>
                         </div>
                     </div>
                 </div>
@@ -461,7 +448,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -474,7 +461,7 @@
                     </div>
                     <div class="pay">
                         <div class="right-pieces">
-                            <a href="">课程评价</a>
+                            <a href="javascript:;">课程评价</a>
                         </div>
                     </div>
                 </div>
@@ -490,7 +477,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -503,7 +490,7 @@
                     </div>
                     <div class="pay">
                         <div class="right-pieces">
-                            <a href="">课程评价</a>
+                            <a href="javascript:;">课程评价</a>
                         </div>
                     </div>
                 </div>
@@ -513,8 +500,8 @@
                     <span>2017-06-23</span>
                     <span>订单号：889890269027</span>
                     <span class="trash">
-                            <img src="./images/垃圾桶.png" alt="">
-                        </span>
+                                <img src="./images/垃圾桶.png" alt=""  class="delete">
+                            </span>
                 </div>
                 <div class="goods">
                     <img src="./images/程序语言设计@2x.png" alt="">
@@ -522,34 +509,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
-                            <i>课程打分</i>
-                            <em>4.9星</em>
-                        </p>
-                        <p class="date">有效日期: 2016.06.05-2017.06.05</p>
-                    </div>
-                    <div class="money">
-                        <span>￥1000</span>
-                        <span>￥1000</span>
-                        <span>待支付</span>
-                    </div>
-                </div>
-            </div>
-            <div class="course">
-                <div class="number">
-                    <span>2017-06-23</span>
-                    <span>订单号：889890269027</span>
-                    <span class="trash">
-                            <img src="./images/垃圾桶.png" alt="">
-                        </span>
-                </div>
-                <div class="goods">
-                    <img src="./images/程序语言设计@2x.png" alt="">
-                    <div class="score">
-                        <span>程序语言设计</span>
-                        <p>
-                            <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -567,8 +527,8 @@
                     <span>2017-06-23</span>
                     <span>订单号：889890269027</span>
                     <span class="trash">
-                            <img src="./images/垃圾桶.png" alt="">
-                        </span>
+                                <img src="./images/垃圾桶.png" alt=""  class="delete">
+                            </span>
                 </div>
                 <div class="goods">
                     <img src="./images/程序语言设计@2x.png" alt="">
@@ -576,7 +536,7 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -594,8 +554,8 @@
                     <span>2017-06-23</span>
                     <span>订单号：889890269027</span>
                     <span class="trash">
-                            <img src="./images/垃圾桶.png" alt="">
-                        </span>
+                                <img src="./images/垃圾桶.png" alt=""  class="delete">
+                            </span>
                 </div>
                 <div class="goods">
                     <img src="./images/程序语言设计@2x.png" alt="">
@@ -603,7 +563,34 @@
                         <span>程序语言设计</span>
                         <p>
                             <span class="star" style="background-image: url(./images/星星.png);">
-                                </span>
+                                    </span>
+                            <i>课程打分</i>
+                            <em>4.9星</em>
+                        </p>
+                        <p class="date">有效日期: 2016.06.05-2017.06.05</p>
+                    </div>
+                    <div class="money">
+                        <span>￥1000</span>
+                        <span>￥1000</span>
+                        <span>待支付</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="number">
+                    <span>2017-06-23</span>
+                    <span>订单号：889890269027</span>
+                    <span class="trash">
+                                <img src="./images/垃圾桶.png" alt=""  class="delete">
+                            </span>
+                </div>
+                <div class="goods">
+                    <img src="./images/程序语言设计@2x.png" alt="">
+                    <div class="score">
+                        <span>程序语言设计</span>
+                        <p>
+                            <span class="star" style="background-image: url(./images/星星.png);">
+                                    </span>
                             <i>课程打分</i>
                             <em>4.9星</em>
                         </p>
@@ -633,23 +620,31 @@
                 <i>尾页</i>
             </div>
         </div>
+        <!-- 我的消息 -->
+        <div class="tap_con">
+            我的消息
+        </div>
+        <!-- 我的收藏 -->
+        <div class="tap_con">
+            我的收藏
+        </div>
         <!-- 个人设置 -->
-        <div class="personal-settings">
-            <div class="account-settings" style="display: none;">
+        <div class="personal-settings tap_con">
+            <div class="account-settings">
                 <h4>
                     个人设置
                 </h4>
                 <div class="settings-page">
                     <div>
                         <div class="portrait">
-                            <img src="./images/矩形 70@2x.png" alt="">
+                            <img src="./images/矩形 70@2x.png" alt="" class="head-portrait">
                             <div class="nickname">
                                 <span>
-                                        梦醒十分
-                                    </span>
-                                <i>
-                                        修改昵称>
-                                    </i>
+                                            梦醒十分
+                                        </span>
+                                <i class="uname">
+                                            修改昵称>
+                                        </i>
                             </div>
                         </div>
                     </div>
@@ -705,48 +700,53 @@
                 </div>
             </div>
             <!-- 修改昵称页 -->
-            <div class="modify-the-nickname" style="display: none;">
+            <div class="modify-the-nickname disappear" style="display: none;">
                 <p>
                     当前位置：
                     <span>
-                            我的资料 ＞ 修改昵称
-                        </span>
+                                <a href="javascript:;" class="return-my-data">我的资料</a> ＞ 修改昵称
+                            </span>
                 </p>
                 <div class="warning">
                     <img src="./images/fa-exclamation-circle@2x.png" alt=""> 昵称修改后，旧的昵称将无法正常登陆，请使用新昵称和原密码进行登录
                 </div>
                 <div class="text-writing">
-                    <i class="new-nickname">新昵称：<input type="text"></i><br><br>
-                    <i class="check-code">校验码：<input type="text"></i>
-                    <div>kdfja</div>
+                    <ul>
+                        <li class="new-nickname"><label for="">新昵称：</label><input type="text" id="new" value=""></li>
+                        <li class="check-code"><label for="">校验码：</label><input type="text" id="ewm" value=""><span>kdfja</span></li>
+                        <li> <input type="submit" value="修改昵称" class="confirm" id="nc"></li>
+                    </ul>
                 </div>
             </div>
             <!-- 修改头像页 -->
-            <div class="modify-the-picture" style="display: none;">
+            <div class="modify-the-picture disappear" style="display: none;">
                 <p>
                     当前位置：
                     <span>
-                            我的资料 ＞ 修改头像
-                        </span>
+                                <a href="javascript:;" class="return-my-data">我的资料</a> ＞ 修改头像
+                            </span>
                 </p>
                 <div class="modify-the-picture-page">
                     <img src="./images/矩形 70@2x.png" alt="">
                     <div class="prompt">
                         <span>
-                                请选择一个新照片进行上传编辑头像保存后，你可以需要刷新一下本页面（按F5键），才能查看最新的头像效果（照片大小不能超过2M)
-                            </span>
-                        <a href="" class="cu">
-                                选择照片
-                            </a>
-                        <a href="">
-                                拍摄照片
-                            </a>
+                                    请选择一个新照片进行上传编辑头像保存后，你可以需要刷新一下本页面（按F5键），才能查看最新的头像效果（照片大小不能超过2M)
+                                </span>
+                        <a href="javascript:;" class="current">
+                                    选择照片
+                                </a>
+                        <a href="javascript:;">
+                                    拍摄照片
+                                </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- 底部模块 -->
+        <!-- 退出 -->
+        <div class="tap_con">
+            退出
+        </div>
+    </div <!-- 底部模块 -->
     <footer>
         <div class="bottom">
             <div class="w">
@@ -758,7 +758,7 @@
                         学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。 © 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号
                     </p>
                     <div class="app">
-                        <a href="">下载APP</a>
+                        <a href="javascript:;">下载APP</a>
                     </div>
                 </div>
                 <div class="about">
@@ -766,11 +766,11 @@
                         关于学成网
                     </h4>
                     <ul>
-                        <li><a href="">关于</a></li>
-                        <li><a href="">管理团队</a></li>
-                        <li><a href="">工作机会</a></li>
-                        <li><a href="">客户服务</a></li>
-                        <li><a href="">帮助</a></li>
+                        <li><a href="javascript:;">关于</a></li>
+                        <li><a href="javascript:;">管理团队</a></li>
+                        <li><a href="javascript:;">工作机会</a></li>
+                        <li><a href="javascript:;">客户服务</a></li>
+                        <li><a href="javascript:;">帮助</a></li>
                     </ul>
                 </div>
                 <div class="about">
@@ -778,11 +778,11 @@
                         新手指南
                     </h4>
                     <ul>
-                        <li><a href="">如何注册</a></li>
-                        <li><a href="">如何选果</a></li>
-                        <li><a href="">如何拿到毕业证</a></li>
-                        <li><a href="">学分是什么</a></li>
-                        <li><a href="">考试未通过怎么办</a></li>
+                        <li><a href="javascript:;">如何注册</a></li>
+                        <li><a href="javascript:;">如何选果</a></li>
+                        <li><a href="javascript:;">如何拿到毕业证</a></li>
+                        <li><a href="javascript:;">学分是什么</a></li>
+                        <li><a href="javascript:;">考试未通过怎么办</a></li>
                     </ul>
                 </div>
                 <div class="about">
@@ -790,8 +790,8 @@
                         合作伙伴
                     </h4>
                     <ul>
-                        <li><a href="">合作机构</a></li>
-                        <li><a href="">合作导师</a></li>
+                        <li><a href="javascript:;">合作机构</a></li>
+                        <li><a href="javascript:;">合作导师</a></li>
                     </ul>
                 </div>
             </div>

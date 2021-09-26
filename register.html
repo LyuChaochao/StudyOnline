@@ -28,35 +28,39 @@
     </div>
     <div class="login clearfix w">
         <ul>
-            <li><a href="javascript:;">登录</a></li>
-            <li><a href="javascript:;" class="current">注册</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html" class="current">注册</a></li>
         </ul>
     </div>
 
     <div class="reg_form w">
-        <form action="">
+        <form action="login.html" id="myform">
             <ul>
                 <li><label for="">手机号码</label><br>
                     <input type="text" class="inp" id="tel" value="请输入11位手机号码">
-                    <span class="error"> <i class="error_icon"></i>手机号输入有误，请重新输入</span>
+                    <span class="error"> <i class="error_icon"></i></span>
                 </li>
                 <li><label for="">短信验证码</label><br>
                     <input type="text" class="inp" id="msg" value="请输入6位短信验证码">
-                    <span class="error"><i class="error_icon"></i>短信验证码错误</span>
+                    <span class="error"><i class="error_icon"></i></span>
+                </li>
+                <li><label for="">用户名</label><br>
+                    <input type="text" class="inp" id="user" value="请输入4-16位字符">
+                    <span class="error"><i class="error_icon"></i></span>
                 </li>
                 <li><label for="">设置密码</label><br>
                     <input type="text" class="inp" id="pwd" value="请输入6-16位字符">
-                    <span class="error"> <i class="error_icon"></i>密码输入有误，请重新输入</span>
+                    <span class="error"> <i class="error_icon"></i></span>
                 </li>
                 <li><label for="">确认密码</label><br>
-                    <input type="text" class="inp" id="surepwd" value="再次请输入6-16位字符">
-                    <span class="error"> <i class="error_icon"></i>密码输入不一致，请重新输入</span>
+                    <input type="text" class="inp" id="surepwd" value="请再次输入6-16位字符">
+                    <span class="error"> <i class="error_icon"></i></span>
                 </li>
                 <li>
-                    <input type="checkbox" class="memory"> 同意协议并注册<em> <a href="javascript:;">《学成网注册协议》</a> </em>
+                    <input type="checkbox" class="ch_box"> <i>同意协议并注册</i> <em> <a href="javascript:;">《学成网注册协议》</a> </em>
                 </li>
                 <li>
-                    <input type="submit" value="完成注册" class="over">
+                    <input type="submit" value="完成注册" class="pull">
                 </li>
             </ul>
 
