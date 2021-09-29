@@ -131,7 +131,8 @@
     position: absolute;
     left: 190px;
     top: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: rgba(0, 0, 0, .5);
     width: 420px;
     height: 420px;
     padding-top: 20px;
@@ -140,6 +141,7 @@
 }
 
 .subnav-r>ul>li a {
+    color: #fff;
     padding: 0 6px;
 }
 
@@ -148,7 +150,7 @@
     font-size: 16px;
 }
 
-.subnav-r>li>a:hover {
+.subnav-r>ul>li>a:hover {
     color: #00a4ff;
 }
 
@@ -671,7 +673,7 @@
     height: 100px;
     background-color: #fff;
     left: 50%;
-    top: 500px;
+    top: 700px;
     margin-left: 605px;
 }
 

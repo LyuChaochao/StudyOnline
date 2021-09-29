@@ -901,6 +901,9 @@ $(function() {
                     }, 200);
 
                     // 将当前页的页数和页渲染到右上角的箭头里
+                    if (page == 0) {
+                        currpage = page;
+                    }
                     $('#em1').text(currpage);
                     $('#em2').text(page);
 

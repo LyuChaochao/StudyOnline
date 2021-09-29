@@ -107,12 +107,12 @@ $(function() {
         $(this).css("color", "#bfbfbf");
     });
     // banner部分左侧导航
-    $(".subnav li").mouseenter(function() {
+    $(".subnav>ul>li").mouseenter(function() {
         var index = $(this).index();
         // console.log(index);
         $(".subnav-r>ul>li").eq(index).show();
     });
-    $(".subnav li").mouseleave(function() {
+    $(".subnav>ul>li").mouseleave(function() {
         var index = $(this).index();
         $(".subnav-r>ul>li").eq(index).hide();
     });

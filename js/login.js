@@ -20,6 +20,19 @@ $(function() {
             return
         }
     });
+    //密码框隐藏与显示
+    var flag = 0;
+    $("#eye").click(function() {
+        if (flag == 0) {
+            $("#pwd").prop("type", "text");
+            $("#eye").prop("src", "images/open.png")
+            flag = 1; // 赋值操作
+        } else {
+            $("#pwd").prop("type", "password");
+            $("#eye").prop("src", "images/close.png")
+            flag = 0;
+        }
+    });
     // 读取本地存储的用户数据
     function getDate() {
         var data = localStorage.getItem("username");

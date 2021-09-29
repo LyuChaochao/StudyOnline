@@ -90,6 +90,15 @@ $(function() {
     };
     //点击退出返回首页并且清空本地存储
     $(".out").click(function() {
-        localStorage.clear();
+        // localStorage.clear();
+        var cof = confirm('确定退出此账号吗？');
+        if (cof == true) {
+            localStorage.clear();
+            return true;
+        } else {
+            $('.box>ul>li').eq(4)[0].click();
+            return false;
+
+        }
     });
 })

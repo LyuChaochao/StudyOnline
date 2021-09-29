@@ -91,6 +91,29 @@ $(function() {
         }
         return
     });
+    var flag = 0;
+    $("#eye").click(function() {
+        if (flag == 0) {
+            $("#pwd").prop("type", "text");
+            $("#eye").prop("src", "images/open.png");
+            flag = 1; // 赋值操作
+        } else {
+            $("#pwd").prop("type", "password");
+            $("#eye").prop("src", "images/close.png")
+            flag = 0;
+        }
+    });
+    $("#sure_eye").click(function() {
+        if (flag == 0) {
+            $("#surepwd").prop("type", "text");
+            $("#sure_eye").prop("src", "images/open.png");
+            flag = 1; // 赋值操作
+        } else {
+            $("#surepwd").prop("type", "password");
+            $("#sure_eye").prop("src", "images/close.png");
+            flag = 0;
+        }
+    });
     // 读取本地存储用户数据
     function getDate() {
         var data = localStorage.getItem("username");

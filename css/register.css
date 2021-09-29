@@ -18,6 +18,13 @@ h2 {
     font-weight: 400;
 }
 
+.box img {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    width: 24px;
+}
+
 .logo a {
     display: block;
     width: 195px;
